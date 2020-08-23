@@ -1,0 +1,31 @@
+""" Предварительная подготовка """
+
+1. Создать репозитарий на Git
+2. Добавить создание README, в .gitinore выбрать python
+3. Лизензия BSD3 или MIT
+4. Скопировать адрес репозитория
+5. Войти в папку с проектами и выполнить команду: git clone -- адрес с Git
+6. Создать виртуальное окружение командой: python -m venv venv
+7. Активировать виртуальное окружение командой: source venv/Scripts/activate
+8. Установить django командой: pip install django
+9. Установить DRF командой: pip install djangorestframework
+10. Установить приложение для подсветки кода pip install pygments
+
+""" Сериализация """
+
+1. Создаём проект Django: django-admin startproject tutorial
+2. Переходим в папку проекта: cd tutorial
+3. Создаём приложение: python manage.py startapp snippets
+4. Добавляем созданное приложение и rest_framework в INSTALLED_APPS
+5. Заходим в tutorial/settings.py и добавляем в INSTALLED_APPS
+6. Создаём модель Snippet для хранения кода. В snippets/models.py
+7. Создаём миграцию в БД: python manage.py makemigrations snippets
+8. Синхронизируем БД: python manage.py migrate
+9. Меняем класс сериализатора на ModelSerializer
+10. Пишем представления во views
+11. Добавляем urls.py в snippets
+12. И соединяем urls в tutorial/urls.py
+
+
+""" Запросы и ответы """
+
